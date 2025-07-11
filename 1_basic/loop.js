@@ -72,3 +72,19 @@ for(let value of iveMembersArray){
   console.log(value);
 }
 
+// while loop
+
+let number = 0;
+
+while(number < 10){
+  console.log(number);
+  number++
+}
+console.log('-'.repeat(40));// 구분선
+
+// do...while
+let number2 = 0;
+do{
+  number2++;
+  console.log(number2);
+}while(number2 < 10);
