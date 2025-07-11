@@ -30,5 +30,12 @@ const colorArray = [
 console.log(colorArray);
 
 // index = 0번 부터 시작 ~ 
-
 console.log(colorArray[1]);
+
+/**
+  static typing -> 변수를 선언할 때 어떤 타입의 변수를 선언할지 명시함 
+  ex)_ C 
+  dynamic typing -> 타입의 명시적 선언 x, 값의 상태를 추론하여 타입지정
+  ex)_ JS
+
+ */
