@@ -108,5 +108,22 @@ console.log('-'.repeat(40));
  console.log(true && false && 'dog'); //false
 console.log('-'.repeat(40));
 
+/*
+지수 연산자 
+*/
+console.log(2 ** 2);
+console.log(10 ** 3);
 
+// null 연산자 
+let name;
+console.log(name);
 
+name = name ?? '강아지' // ?? => 좌측값이 null || undefine 이면 우측값 반환해라
+console.log(name);
+
+name = name ?? '고양이' // name 값이 이미 '강아지'로 할당됨 
+console.log(name);
+
+let name2;
+name2 ??= '코끼리'
+console.log(name2);
