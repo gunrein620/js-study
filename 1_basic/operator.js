@@ -49,4 +49,27 @@ console.log(number);
 
 number -= 10;
 console.log(number);
+console.log('-'.repeat(40));
+
+// 바교연산자
+
+// 값의 비교
+// 값과 타입의 비교 
+
+console.log(5 == 5); // True
+console.log(5 == '5'); // True
+console.log(0 == ''); // True
+console.log(true == 1); // True
+console.log(true == '1'); // True
+console.log(false == 0); // True
+console.log('-'.repeat(40));
+
+console.log(5 === 5); // True
+console.log(5 === '5'); // False
+console.log(0 === ''); // False
+console.log(true === 1); // False
+console.log(true === '1'); // False
+console.log(false === 0); // False
+console.log('-'.repeat(40));
+
 
