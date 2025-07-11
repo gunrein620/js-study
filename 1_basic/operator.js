@@ -88,3 +88,25 @@ console.log(true !== '1'); // True
 console.log(false !== 0); // True
 console.log('-'.repeat(40));
 
+/**
+ 단축평가 (short circuit evaluation)
+
+ 좀 이상한 느낌이긴 한데 걍 외우기 ㄱㄱ 
+
+ &&를 사용했을때 좌측이 True 면 우측값 반환 
+ &&를 사용했을때 좌측이 False 면 좌측값 반환 
+ ||를 사용했을때 좌측이 True 면 좌측값 반환  
+ ||를 사용했을때 좌측이 False 면 우측값 반환 
+ */
+
+ console.log(true && '강아지'); // 강아지 
+ console.log(false && '강아지'); //false
+ console.log(true || '강아지'); // true
+ console.log(false || '강아지'); // 강아지
+
+ console.log(true && true && 'dog'); // dog 
+ console.log(true && false && 'dog'); //false
+console.log('-'.repeat(40));
+
+
+
