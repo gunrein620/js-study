@@ -43,3 +43,32 @@ for (let i = 0; i < side; i++) {
 }
 console.log(square);
 
+// [for in](키) vs [for of](값)
+//
+
+// for...in -> key 값 
+
+const kim = {
+  name: '김철수',
+  year: 2003,
+  nation: 'kor'
+}
+
+for(let key in kim){
+  console.log(key);
+}
+
+const iveMembersArray = ['안유진','가을','레이','장원영','리즈','이서'];
+
+for(let key in iveMembersArray){
+  console.log(key);
+  console.log(`${key} : ${iveMembersArray[key]}`);
+}
+console.log('-'.repeat(40));// 구분선
+
+// for...of (값 : value)
+// list에서 사용 
+for(let value of iveMembersArray){
+  console.log(value);
+}
+
