@@ -29,7 +29,7 @@ const colorArray = [
 
 console.log(colorArray);
 
-// index = 0번 부터 시작 ~ 
+// index = 0번 부터 시작 ~ >>>>
 console.log(colorArray[1]);
 
 /**
