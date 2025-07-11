@@ -72,4 +72,19 @@ console.log(true === '1'); // False
 console.log(false === 0); // False
 console.log('-'.repeat(40));
 
+console.log(5 != 5); // False
+console.log(5 != '5'); // False
+console.log(0 != ''); // False
+console.log(true != 1); // False
+console.log(true != '1'); // False
+console.log(false != 0); // False
+console.log('-'.repeat(40));
+
+console.log(5 !== 5); // False
+console.log(5 !== '5'); // True
+console.log(0 !== ''); // True
+console.log(true !== 1); // True
+console.log(true !== '1'); // True
+console.log(false !== 0); // True
+console.log('-'.repeat(40));
 
