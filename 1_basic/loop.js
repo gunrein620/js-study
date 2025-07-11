@@ -88,3 +88,12 @@ do{
   number2++;
   console.log(number2);
 }while(number2 < 10);
+console.log('-'.repeat(40));// 구분선
+
+// continue
+for(let i = 0; i < 10; i++){
+  if(i === 5){
+    continue // 5를 skip
+  }
+  console.log(i);
+} 
