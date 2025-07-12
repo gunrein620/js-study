@@ -44,3 +44,16 @@
 }
 multiply(2,4); // 8 
 multiply(2); // 20
+
+console.log('-'.repeat(40));
+
+// return 
+// 값을 반환받기 
+// 리턴된 값을 변수에 넣어 활용 
+
+function multiply(x,y) {
+  return x * y;
+}
+
+const result1 = multiply(2,4);
+console.log(result1);
