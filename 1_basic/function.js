@@ -57,3 +57,44 @@ function multiply(x,y) {
 
 const result1 = multiply(2,4);
 console.log(result1);
+
+//arrow function : 화살표 함수 
+const multiply2 = (x,y) => {
+  return x * y;
+}
+console.log(multiply2(3, 4));
+
+const multiply3 = (x, y) => x * y;
+console.log(multiply3(4, 5));
+
+// parameter 1개 일 경우 () 생략도 가능 
+const multiply4 = x => x * 2;
+console.log(multiply4(2));
+
+// 중첩함수 
+const multiply5 = x => y => z => `x: ${x} y: ${y} z: ${z}`;
+console.log(multiply5(2)(5)(7)); 
+
+// 풀어쓴 경우 
+function multiply6 (x) {
+  return function(y){
+    return function(z){
+      `x: ${x} y: ${y} z: ${z}`;
+    }
+  }
+}
+console.log(multiply5(4)(6)(8)); 
+console.log('-'.repeat(40));
+
+
+const multiplyThree = function(x,y,z) {
+  console.log(arguments);
+  return x * y * z;
+}
+console.log(multiplyThree(4,5,6));
+
+
+const multiplyAll = function(...arguments){
+  return Object.values(arguments).reduce((a,b) => a * b,1);
+}
+console.log(multiplyAll(3,4,5,6,7,8,9,10));
