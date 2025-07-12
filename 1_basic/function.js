@@ -98,3 +98,11 @@ const multiplyAll = function(...arguments){
   return Object.values(arguments).reduce((a,b) => a * b,1);
 }
 console.log(multiplyAll(3,4,5,6,7,8,9,10));
+
+// 즉시실행 함수 immediately invoked function
+(function(x,y){
+  console.log(x * y);
+})(4,5);
+
+console.log(typeof multiply);
+console.log(multiply instanceof Object);
