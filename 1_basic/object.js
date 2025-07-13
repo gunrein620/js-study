@@ -52,3 +52,20 @@ console.log(yuJin2);
  * 1. const로 선언할경우 객체 자체를 변경 할 수는 없다.
  * 2. 객체안의 프로퍼티나 메서드는 변경 할 수 있다.
  */
+const wonYoung = {
+  name: '장원영',
+  group: 'IVE',
+}
+console.log(wonYoung);
+
+// 모든 키값 다 가져오기 
+console.log(Object.keys(wonYoung));
+// 모든 values 값 다 가져오기 
+console.log(Object.values(wonYoung));
+
+const name = '안유진';
+
+const yuJin3 = {
+  name,
+}
+console.log(yuJin3);
