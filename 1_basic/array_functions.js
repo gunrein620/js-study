@@ -133,3 +133,36 @@ console.log(iveMembers.map((x)=>{
     return `IVE: ${x}`;
   }else return x;
 })); 
+console.log('=='.repeat(40));
+
+// filter()
+numbers = [1,8,7,6,3];
+
+// 배열을 순회함 true 반환 
+console.log(numbers.filter((x)=> true)); 
+// 만일 짝수만 반환하고 싶으면 
+console.log(numbers.filter((x)=> x % 2 === 0));
+
+//find()
+// 순회하다가 조건이 처음 true 인것만 반환 
+console.log(numbers.find((x) => x % 2 === 0));
+
+//findIndex()
+// 순회하다가 조건이 처음 true인 값으 인데스 반환  
+console.log(numbers.findIndex((x) => x % 2 === 0));
+
+//reduce()
+console.log(numbers.reduce((p, n) => p + n,0));
+
+/**
+ * reduce() !!! 동작원리 !!! 
+ * 1. 초기값인 0이 p에 입력된다.
+ * 2. numbers 배열의 1번째 값인 1이 n에 입력됨 
+ * 3. p + n 즉, 0 + 1의 결과값인 1이 반환됨
+ * 4. 3에서 반환한 값이 p에 입력됨
+ * 5. 배열의 두번째 값인 8이 n에 입력됨 
+ * 6. p + n 즉, 1 + 8의 결과 값인 9가 반환 
+ * 7. 6에서 반환한 값 9가 또 다시 P에 입력됨 
+ * 8. 리스트의 모든 값들을 다 순회할때까지 반복 
+ * 결국 모든 값을 다 던한 25가 반환 됨 
+ */
