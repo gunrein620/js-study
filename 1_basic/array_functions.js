@@ -123,4 +123,13 @@ numbers.sort((a,b)=>{
 })
 console.log(numbers);
 
+console.log('-'.repeat(40));
 //map()
+console.log(iveMembers.map((x)=>x));
+console.log(iveMembers.map((x)=>`아이브 : ${x}`)); 
+
+console.log(iveMembers.map((x)=>{
+  if(x === '안유진'){
+    return `IVE: ${x}`;
+  }else return x;
+})); 
