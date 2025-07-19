@@ -108,3 +108,36 @@ console.log('-'.repeat(45));
 for(let key in yuJin2){
   console.log(key);
 }
+
+/**
+ * configurable 
+ */
+Object.defineProperty(yuJin2, 'height',{
+  writable: true,
+  configurable: false,
+})
+console.log(Object.getOwnPropertyDescriptor(yuJin2,'height'));
+
+// configurable -> false 로 했기때문에 attribute 수정불가 : 오류발생 
+// writable t -> f 가능 
+// but writable f -> t 불가능 
+
+// Object.defineProperty(yuJin2, 'height',{
+//   enumerable: false,
+// })
+
+Object.defineProperty(yuJin2,'height',{
+  value: 172,
+})
+console.log(Object.getOwnPropertyDescriptor(yuJin2, 'height'));
+
+Object.defineProperty(yuJin2,'height',{
+  writable: false,
+})
+console.log(Object.getOwnPropertyDescriptor(yuJin2, 'height'));
+
+// false -> true 에러발생!  
+// Object.defineProperty(yuJin2,'height',{
+//   writable: true,
+// })
+
