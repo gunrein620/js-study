@@ -88,3 +88,23 @@ Object.defineProperty(yuJin2, 'height',{
 console.log('-'.repeat(45));
 yuJin2.height = 132
 console.log(Object.getOwnPropertyDescriptor(yuJin2,'height'));
+
+/**
+ * Enumerable  false로 설정시 열거불가능하게함 
+ */
+// key  확인 
+console.log(Object.keys(yuJin2));
+for (let keys in yuJin2){
+  console.log(keys);
+}
+
+Object.defineProperty(yuJin2,'name',{
+  enumerable: false,
+})
+
+console.log(Object.keys(yuJin2));
+
+console.log('-'.repeat(45));
+for(let key in yuJin2){
+  console.log(key);
+}
