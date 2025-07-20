@@ -105,3 +105,23 @@ console.log(yuJin3);
 // console.log(yuJin3);
 
 console.log(Object.getOwnPropertyDescriptor(yuJin3,'name'));
+
+// 상위오브젝트가 얼어도 하위 오브젝트가 같이 얼지는 않는다. 
+// 이는 Extansiale , seal 또한 동일하다 
+
+const yuJin4 = { 
+  name: '안유진',
+  year: 2003,
+  wonYoung: {
+    name: '장원영',
+    year: 2004,
+  }
+}
+
+Object.freeze(yuJin4);
+
+console.log(Object.isFrozen(yuJin4));
+
+// 그렇다면 객체안쪽의 객체도 얼었을까? 
+
+console.log(Object.isFrozen(yuJin4['wonYoung'])); // false 얼지 않았다 
