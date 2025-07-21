@@ -31,3 +31,11 @@ console.log(yuJin.__proto__);
 console.log(yuJin.__proto__ === IdolModel.prototype);
 
 console.log(testObj.__proto__ === Object.prototype);
+console.log('-'.repeat(45));
+ 
+console.log(IdolModel.__proto__ === Function.prototype);
+console.log(Function.prototype.__proto__ === Object.prototype);
+console.log(IdolModel.prototype.__proto__ === Object.prototype);
+
+console.log(yuJin.toString());
+console.log(Object.prototype.toString());
